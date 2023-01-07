@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+
 def canUnlockAll(boxes):
     """Unlock array of boxes of keys with indices. """
     index = 0
