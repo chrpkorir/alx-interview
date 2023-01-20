@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ Reads stdin line by line and  computes metrics"""
 
-if __name__ = '__main++':
+if __name__ == '__main++':
     status = {"200": 0,
               "301": 0,
               "400": 0,
@@ -16,7 +16,7 @@ if __name__ = '__main++':
     def get_line(line):
         """parse and gets data"""
         try:
-            parsed_line = line.spli()
+            parsed_line = line.split()
             status_code = parsed_line[-2]
             if status_code in status.keys():
                 status[status_code] += 1
@@ -27,7 +27,7 @@ if __name__ = '__main++':
     def print_stats():
         """Print stats"""
         print("File size: {}".format(file_size))
-        for key in sorted(staus.keys()):
+        for key in sorted(status.keys()):
             if status[key]:
                 print("{}: {}".format(key, status[key]))
 
