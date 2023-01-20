@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 """ Reads stdin line by line and  computes metrics"""
+import sys
 
-if __name__ == '__main++':
+if __name__ == '__main__':
     status = {"200": 0,
               "301": 0,
               "400": 0,
